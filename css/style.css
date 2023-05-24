@@ -1,0 +1,396 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  color: #222222;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.info-bg,
+.info a {
+  background: #122ab2;
+  color: #ffffff;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 960px;
+}
+.info p,
+.info a {
+  padding: 0px 10px 10px 10px;
+}
+
+.header {
+  background: #2c70ff;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  max-width: 960px;
+  padding: 15px 0px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav a {
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: #122ab2;
+}
+
+/* introdução */
+.introducao {
+  font-weight: bold;
+  line-height: 1;
+  font-size: 3rem;
+  max-width: 960px;
+  padding: 0px 10px;
+  margin: 60px auto;
+}
+
+.sobre {
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  padding: 60px 0px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0px 10px;
+}
+
+.sobre-info h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.sobre-info p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #7c7c7c;
+}
+.info-img {
+  flex: 1 1 160px;
+  margin: 0px 10px;
+}
+.flex-img {
+  display: flex;
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3rem;
+  margin: 0px 10px 60px 10px;
+}
+.produtos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+}
+
+.produtos-item h2 {
+  font-size: 3rem;
+  color: #a4a4a4;
+  background: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.roxo {
+  border-top: 8px solid #ae81ff;
+}
+.rosa {
+  border-top: 8px solid #f9265e;
+}
+.azul {
+  border-top: 8px solid #66d9eb;
+}
+
+/* preço */
+
+.precos {
+  display: flex;
+  background: #f7f7f7;
+  padding: 60px;
+  align-items: flex-end;
+}
+
+.preco-item {
+  flex: 1 1 260px;
+  margin: 10px;
+  border: 4px solid #ffffff;
+  padding: 10px;
+}
+.preco-item h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #a4a4a4;
+  margin-top: 20px;
+}
+
+.preco-item span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  font-size: 3rem;
+  padding: 10px 0px 5px 0px;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+
+.preco-item sup {
+  font-size: 1.5rem;
+}
+
+.preco-item ul {
+  max-width: 300px;
+  margin: 20px auto;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.preco-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preco-item li:after {
+  content: "";
+  display: block;
+  background: #2c70ff;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+
+.preco-item a {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  padding: 15px 0px;
+  max-width: 300px;
+  text-align: center;
+  border: 4px solid;
+  margin: 20px auto;
+  color: #222222;
+}
+
+/* qualidade */
+/* aqui eu seria melhor eu usar css grid, mas como é o intuito é usar flexbox eu vou usar flexbox mesmo. - Nathã Souza Lopes. */
+.qualidade {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 60px auto;
+  gap: 20px;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25rem;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2:before {
+  background: #ae81ff;
+}
+.qualidade-item:nth-of-type(3n + 2) h2:before {
+  background: #f9265e;
+}
+.qualidade-item:nth-of-type(3n + 3) h2:before {
+  background: #66d9eb;
+}
+
+.qualidade-item p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+
+/* Newsletter */
+.newsletter {
+  background: #f7f7f7;
+  padding: 60px calc((100% - 960px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 260px;
+  margin: 0px 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3rem;
+  color: #a4a4a4;
+}
+
+.newsletter-info p {
+  font-size: 1.25rem;
+  font-style: italic;
+  max-width: 230px;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  flex: 2 1 260px;
+  margin: 0 10px;
+}
+
+.newsletter-form input {
+  flex: 3 1 260px;
+  font-size: 1.25rem;
+  color: #7c7c7c;
+  font-style: italic;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  border: 2px solid #2c70ff;
+  background: transparent;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.newsletter-form button {
+  flex: 1 1 200px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #2c70ff;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+  margin-left: 4px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2.25rem;
+  background: #2c70ff;
+  color: #122ab2;
+}
+
+@media (max-width: 800px) {
+  .sobre {
+    display: block;
+  }
+  .flex-img {
+    display: flex;
+    align-items: center;
+  }
+  .precos {
+    padding: 0px 10px 0px 10px;
+  }
+  .precos .preco-item:nth-child(3) {
+    order: -2;
+  }
+  .precos .preco-item:nth-child(2) {
+    order: -1;
+  }
+  .precos,
+  .produtos-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    display: none;
+  }
+  .newsletter-form button {
+    margin: 0;
+  }
+
+  .footer {
+    font-size: 1.25rem;
+  }
+  .header-logo,
+  .header-nav {
+    margin: 0 auto;
+  }
+}
